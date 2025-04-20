@@ -1,16 +1,15 @@
-# Google Maps Place Picker - MB edition
+# Google Maps Place Picker V2 - MB edition
 
-> This README is only slightly changed from its original repo which this repository was forked from. Due to no maintenance by the original author, I want to provide this fork that is maintained, I also added more functionality to it.
+> This package is a maintained fork of the original Google Maps Place Picker MB edition.
 > 
 > To install:  
 > 
 > ```
-> flutter pub add google_maps_place_picker_mb
+> flutter pub add google_maps_place_picker_mb_v2
 > ```
 >
 > If you'd like to contribute, please read the [CONTRIBUTING.md](CONTRIBUTING.md) notice.
-> 
-> ~ _martin-braun_
+
 
 ----------------------------------------------------
 
@@ -26,9 +25,7 @@ Builder using kevmoo's [tuple](https://pub.dev/packages/tuple)
 ## Preview
 ![](preview.gif)
 
-> Note: This preview shows a new feature added by me: The ability to restrict the picked selection to the circle area. This can be disabled, obviously.
-> 
-> ~ _martin-braun_
+> Note: This preview shows the ability to restrict the picked selection to the circle area. This can be disabled if needed.
 
 ## Getting Started
 
