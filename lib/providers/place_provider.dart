@@ -82,13 +82,14 @@ class PlaceProvider extends ChangeNotifier {
         return;
       }
       return Future.error(
-          'Location permissions are permanently denied, we cannot request permissions.');
+        'Location permissions are permanently denied, we cannot request permissions.',
+      );
     }
 
     _currentPosition = await Geolocator.getCurrentPosition(
       locationSettings: LocationSettings(
         accuracy: desiredAccuracy ?? LocationAccuracy.best,
-      )
+      ),
     );
   }
 

@@ -1,12 +1,13 @@
 name: google_maps_place_picker_mb_v2
 description: A Flutter plugin that provides a place picker using Google Maps and easy place
   selection functionality with built-in searching.
-version: 1.0.0
+version: 1.0.1
 homepage: https://arsyncsolutions.com/
 repository: https://github.com/itsatifsiddiqui/google_maps_place_picker_mb
 
 environment:
   sdk: ^3.7.0
+  flutter: ">=3.16.0"
 
 dependencies:
   flutter:
@@ -14,6 +15,9 @@ dependencies:
   geolocator: ^14.0.0
   google_api_headers: ^4.4.1
   google_maps_flutter: ^2.12.1
+  google_maps_flutter_android: ^2.16.1
+  google_maps_flutter_platform_interface: ^2.11.1
+  google_maps_flutter_ios: ^2.15.1
   flutter_google_maps_webservices: ^1.1.1
   http: ^1.3.0
   provider: ^6.1.4
@@ -25,7 +29,13 @@ dev_dependencies:
   flutter_test:
     sdk: flutter
 
-flutter: null
+flutter:
+  plugin:
+    platforms:
+      android:
+        default_package: google_maps_flutter_android
+      ios:
+        default_package: google_maps_flutter_ios
 
 false_secrets:
   - /example/lib/keys.dart
